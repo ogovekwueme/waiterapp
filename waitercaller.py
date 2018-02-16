@@ -6,6 +6,9 @@ from user import User
 
 DB = DBHelper()
 app = Flask(__name__)
+
+app.secret_key = 'i2QvD4cd4aAPjCampxPkjWliR0znwS9Y3ZC41jmPBlAFzBfiNf1mo0q9G/Iw0GtwCoxSjDz20Bdp4hICXs1RX5KvPwTDdZgrcHW'
+
 login_manager = LoginManager(app)
 
 @app.route('/')
